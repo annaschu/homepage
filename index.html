@@ -2,15 +2,101 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Simple Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Anna Smith - Fisheries and Ocean Consultancy</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
-        h1 { color: #2c3e50; }
-        p { color: #34495e; }
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-top: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .bio, .contact-info, .skills, .services {
+            margin: 20px 0;
+            text-align: left;
+        }
+        .skills ul, .services ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .skills ul li, .services ul li {
+            background-color: #f0f0f0;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+        .contact-info a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
-    <h1>Welcome to My Website</h1>
-    <p>This is a simple single-page website hosted on GitHub Pages.</p>
+    <div class="container">
+        <!-- Profile Picture -->
+        <img src="Anna_profile-picture.jpeg" alt="Dr. Anna Smith" class="profile-picture">
+
+        <!-- Name and Title -->
+        <h1>Dr. Anna Smith</h1>
+        <p>Fisheries and Ocean Consultant</p>
+
+        <!-- Short Bio -->
+        <div class="bio">
+            <p>My expertise in the field of fisheries and oceans extends from transdisciplinary research approaches, including on-the-ground interviews and organizing workshops with fishers, managers, and policymakers, to developing high-level theoretical research frameworks to assess fisheries from local to global scales.</p>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p><strong>Name:</strong> Dr. Anna Smith</p>
+            <p><strong>Email:</strong> <a href="mailto:anna.smith@example.com">anna.smith@example.com</a></p>
+            <p><strong>Address:</strong> 1234 Ocean Drive, Marine City, CA 90210</p>
+            <p><strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID" target="_blank">View Profile</a></p>
+        </div>
+
+        <!-- Skills -->
+        <div class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Transdisciplinary Research Approaches</li>
+                <li>Workshop Facilitation and Organization</li>
+                <li>Policy Analysis and Development</li>
+                <li>Data Analysis and Statistical Modeling</li>
+                <li>Fisheries Management and Sustainability</li>
+                <li>Theoretical Framework Development</li>
+            </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="services">
+            <h2>Services</h2>
+            <ul>
+                <li>Fisheries Assessment and Sustainability Consulting</li>
+                <li>Policy and Management Workshop Facilitation</li>
+                <li>Research Framework Development</li>
+                <li>Stakeholder Engagement and Interviewing</li>
+                <li>Data Analysis and Interpretation</li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
