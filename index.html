@@ -10,36 +10,50 @@
             color: #333;
             margin: 0;
             padding: 0;
+            background-color: #f7f9fa;
         }
         .container {
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            text-align: center;
+            background-color: #ffffff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
         }
         .profile-picture {
             width: 150px;
             height: 150px;
-            border-radius: 50%;
             object-fit: cover;
-            margin-top: 20px;
+            margin-right: 20px;
         }
         h1 {
             color: #2c3e50;
+            margin: 0;
+            font-size: 1.8em;
         }
-        .bio, .contact-info, .skills, .services {
+        .consulting-title {
+            color: #3498db;
+            font-size: 1.2em;
+            margin-top: 5px;
+        }
+        .bio, .skills, .services, .contact-info {
             margin: 20px 0;
             text-align: left;
         }
-        .skills ul, .services ul {
+        .skills ul {
             list-style-type: none;
             padding: 0;
         }
-        .skills ul li, .services ul li {
-            background-color: #f0f0f0;
+        .skills ul li {
+            background-color: #e0f4f1;
             padding: 10px;
             margin: 5px 0;
             border-radius: 5px;
+            color: #34495e;
         }
         .contact-info a {
             color: #3498db;
@@ -48,37 +62,38 @@
         .contact-info a:hover {
             text-decoration: underline;
         }
+        footer {
+            text-align: center;
+            font-size: 0.9em;
+            color: #555;
+            margin-top: 30px;
+            padding: 10px 0;
+            border-top: 1px solid #ddd;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Profile Picture -->
-        <img src="Anna_profile-picture.jpeg" alt="Dr. Anna Schuhbauer" class="profile-picture">
-
-        <!-- Name and Title -->
-        <h1>Dr. Anna Smith</h1>
-        <p>Fisheries and Ocean Consultant</p>
+        <!-- Header with Profile Picture, Name, and Title -->
+        <div class="header">
+            <img src="Anna_profile-picture.jpeg" alt="Dr. Anna Schuhbauer" class="profile-picture">
+            <div>
+                <h1>Dr. Anna Schuhbauer</h1>
+                <p class="consulting-title">Fisheries, Fishers and Fish - Scientific Consulting</p>
+            </div>
+        </div>
 
         <!-- Short Bio -->
         <div class="bio">
-            <p>My expertise in the field of fisheries and oceans extends from transdisciplinary research approaches, including on-the-ground interviews and organizing workshops with fishers, managers, and policymakers, to developing high-level theoretical research frameworks to assess fisheries from local to global scales. Additionally, I have compiled and assessed quantitative and qualitative data in almost always in data-poor situations and created complex analytical models with a focus on economic and socio-economic datasets. My work experience is in NGO, academic and government environments.
-            Examples of recent project work includes a socio-economic assessment of Peruvian small-scale fisheries through a human well-being lens, developing a collaborative community-based fisheries management guide for inland fisheries and up-dating the global fisheries subsidies dataset. I have worked with the The Nature Conservancy, Oceana and with the Fisheries Economic Research Unit at The University of British Columbia.  </p>
-        </div>
-
-        <!-- Contact Information -->
-        <div class="contact-info">
-            <h2>Contact Information</h2>
-            <p><strong>Name:</strong> Dr. Anna Schuhbauer</p>
-            <p><strong>Email:</strong> <a href="mailto:anna.smith@example.com">acschuhbauer@gmail.com</a></p>
-            <p><strong>Address:</strong> Roberts Creek, British Columbia, Canada</p>
-            <p><strong>Google Scholar:</strong> <a href="https://scholar.google.ca/citations?user=PZDim9sAAAAJ&hl=en" target="_blank">View Profile</a></p>
+            <p>My expertise in the field of fisheries and oceans extends from transdisciplinary research approaches, including on-the-ground interviews and organizing workshops with fishers, managers, and policymakers, to developing high-level theoretical research frameworks to assess fisheries from local to global scales. Additionally, I have compiled and assessed quantitative and qualitative data in almost always data-poor situations and created complex analytical models with a focus on economic and socio-economic datasets. My work experience spans NGO, academic, and government environments.</p>
+            <p>Examples of recent project work include a socio-economic assessment of Peruvian small-scale fisheries through a human well-being lens, developing a collaborative community-based fisheries management guide for inland fisheries, and updating the global fisheries subsidies dataset. I have worked with The Nature Conservancy, Oceana, and the Fisheries Economic Research Unit at The University of British Columbia.</p>
         </div>
 
         <!-- Skills -->
         <div class="skills">
             <h2>Skills</h2>
             <ul>
-                <li>Qualitative and Quantiative Data Analysis</li>
+                <li>Qualitative and Quantitative Data Analysis</li>
                 <li>Workshop Facilitation and Organization</li>
                 <li>Statistical Modeling and Data Visualization</li>
                 <li>Theoretical Framework Development</li>
@@ -88,19 +103,16 @@
         <!-- Services -->
         <div class="services">
             <h2>Services</h2>
-            <ul>
-                <li>Socio-economic Fisheries Assessment</li>
-                <li>Development of Transdisciplinary Research Approaches</li>
-                <li>Research Framework Development</li>
-                <li>Stakeholder Engagement and Interviewing</li>
-                <li>Writing and Reviewing Research Articles and Reports</li>
-                <li>Data Analysis and Interpretation</li>
-            </ul>
+            <p>I provide comprehensive consulting services in fisheries assessment, including socio-economic evaluations, transdisciplinary research approach development, stakeholder engagement, and data analysis. My services are tailored to support NGOs, academic institutions, and government agencies in building sustainable, community-based fisheries management frameworks and analyzing complex data to inform policy and management decisions.</p>
         </div>
+
+        <!-- Contact Information -->
+        <footer class="contact-info">
+            <h2>Contact Information</h2>
+            <p><strong>Email:</strong> <a href="mailto:acschuhbauer@gmail.com">acschuhbauer@gmail.com</a></p>
+            <p><strong>Location:</strong> Roberts Creek, British Columbia, Canada</p>
+            <p><strong><a href="https://scholar.google.ca/citations?user=PZDim9sAAAAJ&hl=en" target="_blank">Google Scholar Profile</a></strong></p>
+        </footer>
     </div>
 </body>
 </html>
-
-
-
-
