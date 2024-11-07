@@ -1,118 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Anna Schuhbauer - Fisheries, Fishers and Fish - Scientific Consulting</title>
+    <title>Dr. Anna Schuhbauer - Fisheries Consulting</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            color: #333;
+        /* Reset CSS */
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f7f9fa;
+            box-sizing: border-box;
         }
+
+        /* Body Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            background-color: #f5f8fa;
+            line-height: 1.6;
+        }
+
+        /* Container */
         .container {
-            max-width: 800px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #ffffff;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
+
+        /* Header */
         .header {
             display: flex;
+            flex-wrap: wrap;
             align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .header img {
+            border-radius: 5px;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin-right: 40px;
+        }
+
+        .header-content {
+            flex: 1;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .header h2 {
+            font-size: 1.5em;
+            color: #3498db;
+            font-weight: normal;
+        }
+
+        /* Main Content */
+        main {
+            margin-bottom: 40px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            font-size: 2em;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #3498db;
+            display: inline-block;
+        }
+
+        section p {
+            font-size: 1.1em;
             margin-bottom: 20px;
         }
-        .profile-picture {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            margin-right: 20px;
-        }
-        h1 {
-            color: #2c3e50;
-            margin: 0;
-            font-size: 1.8em;
-        }
-        .consulting-title {
-            color: #3498db;
-            font-size: 1.2em;
-            margin-top: 5px;
-        }
-        .bio, .skills, .services, .contact-info {
-            margin: 20px 0;
-            text-align: left;
-        }
-        .skills ul {
-            list-style-type: none;
+
+        /* Skills */
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            margin: 0 -10px;
             padding: 0;
         }
-        .skills ul li {
-            background-color: #e0f4f1;
-            padding: 10px;
-            margin: 5px 0;
+
+        .skills-list li {
+            flex: 1 1 45%;
+            background-color: #ecf0f1;
+            margin: 10px;
+            padding: 15px;
             border-radius: 5px;
-            color: #34495e;
+            font-size: 1.1em;
         }
+
+        /* Contact Info */
+        .contact-info p {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
         .contact-info a {
             color: #3498db;
             text-decoration: none;
         }
+
         .contact-info a:hover {
             text-decoration: underline;
         }
+
+        /* Footer */
         footer {
             text-align: center;
-            font-size: 0.9em;
-            color: #555;
-            margin-top: 30px;
-            padding: 10px 0;
-            border-top: 1px solid #ddd;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: #fff;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .header img {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+
+            .skills-list li {
+                flex: 1 1 100%;
+            }
         }
     </style>
 </head>
 <body>
+    <!-- Container -->
     <div class="container">
-        <!-- Header with Profile Picture, Name, and Title -->
-        <div class="header">
-            <img src="Anna_profile-picture.jpeg" alt="Dr. Anna Schuhbauer" class="profile-picture">
-            <div>
+
+        <!-- Header Section -->
+        <header class="header">
+            <img src="https://annaschu.github.io/homepage/Anna_profile-picture.jpeg" alt="Dr. Anna Schuhbauer">
+            <div class="header-content">
                 <h1>Dr. Anna Schuhbauer</h1>
-                <p class="consulting-title">Fisheries, Fishers and Fish - Scientific Consulting</p>
+                <h2>Fisheries, Fishers, and Fish - Scientific Consulting</h2>
             </div>
-        </div>
+        </header>
 
-        <!-- Short Bio -->
-        <div class="bio">
-            <p>My expertise in the field of fisheries and oceans extends from transdisciplinary research approaches, including on-the-ground interviews and organizing workshops with fishers, managers, and policymakers, to developing high-level theoretical research frameworks to assess fisheries from local to global scales. Additionally, I have compiled and assessed quantitative and qualitative data in almost always data-poor situations and created complex analytical models with a focus on economic and socio-economic datasets. My work experience spans NGO, academic, and government environments.</p>
-            <p>Examples of recent project work include a socio-economic assessment of Peruvian small-scale fisheries through a human well-being lens, developing a collaborative community-based fisheries management guide for inland fisheries, and updating the global fisheries subsidies dataset. I have worked with The Nature Conservancy, Oceana, and the Fisheries Economic Research Unit at The University of British Columbia.</p>
-        </div>
+        <!-- Main Content -->
+        <main>
+            <!-- Bio Section -->
+            <section class="bio">
+                <h2>About Me</h2>
+                <p>With extensive expertise in fisheries and ocean sciences, I specialize in transdisciplinary research approaches that encompass on-the-ground interviews, workshops with fishers, managers, and policymakers, as well as the development of high-level theoretical frameworks to assess fisheries from local to global scales. My proficiency includes compiling and assessing quantitative and qualitative data in data-poor situations and creating complex analytical models focused on economic and socio-economic datasets. My professional experience spans NGOs, academia, and government sectors.</p>
+                <p>Recent projects include a socio-economic assessment of Peruvian small-scale fisheries through a human well-being lens, developing a collaborative community-based fisheries management guide for inland fisheries, and updating the global fisheries subsidies dataset. I have collaborated with The Nature Conservancy, Oceana, and the Fisheries Economic Research Unit at The University of British Columbia.</p>
+            </section>
 
-        <!-- Skills -->
-        <div class="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>Qualitative and Quantitative Data Analysis</li>
-                <li>Workshop Facilitation and Organization</li>
-                <li>Statistical Modeling and Data Visualization</li>
-                <li>Theoretical Framework Development</li>
-            </ul>
-        </div>
+            <!-- Skills Section -->
+            <section class="skills">
+                <h2>Skills</h2>
+                <ul class="skills-list">
+                    <li>Qualitative and Quantitative Data Analysis</li>
+                    <li>Workshop Facilitation and Organization</li>
+                    <li>Statistical Modeling and Data Visualization</li>
+                    <li>Theoretical Framework Development</li>
+                </ul>
+            </section>
 
-        <!-- Services -->
-        <div class="services">
-            <h2>Services</h2>
-            <p>I provide comprehensive consulting services in fisheries assessment, including socio-economic evaluations, transdisciplinary research approach development, stakeholder engagement, and data analysis. My services are tailored to support NGOs, academic institutions, and government agencies in building sustainable, community-based fisheries management frameworks and analyzing complex data to inform policy and management decisions.</p>
-        </div>
+            <!-- Services Section -->
+            <section class="services">
+                <h2>Services</h2>
+                <p>I offer comprehensive consulting services in fisheries assessment, including socio-economic evaluations, development of transdisciplinary research approaches, stakeholder engagement, and data analysis. My services are tailored to support NGOs, academic institutions, and government agencies in building sustainable, community-based fisheries management frameworks and analyzing complex data to inform policy and management decisions.</p>
+            </section>
 
-        <!-- Contact Information -->
-        <footer class="contact-info">
-            <h2>Contact Information</h2>
-            <p><strong>Email:</strong> <a href="mailto:acschuhbauer@gmail.com">acschuhbauer@gmail.com</a></p>
-            <p><strong>Location:</strong> Roberts Creek, British Columbia, Canada</p>
-            <p><strong><a href="https://scholar.google.ca/citations?user=PZDim9sAAAAJ&hl=en" target="_blank">Google Scholar Profile</a></strong></p>
-        </footer>
+            <!-- Contact Information -->
+            <section class="contact-info">
+                <h2>Contact Information</h2>
+                <p><strong>Email:</strong> <a href="mailto:acschuhbauer@gmail.com">acschuhbauer@gmail.com</a></p>
+                <p><strong>Location:</strong> Roberts Creek, British Columbia, Canada</p>
+                <p><strong>Google Scholar:</strong> <a href="https://scholar.google.ca/citations?user=PZDim9sAAAAJ&hl=en" target="_blank">View Profile</a></p>
+            </section>
+        </main>
+
     </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Dr. Anna Schuhbauer. All rights reserved.
+    </footer>
 </body>
 </html>
+
